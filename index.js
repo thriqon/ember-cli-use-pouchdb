@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-cli-import-pouchdb'
+	name: 'ember-cli-import-pouchdb'
 };
