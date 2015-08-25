@@ -28,13 +28,13 @@ test('it leaves the choice of adapter to PouchDB in test mode when configured to
 	assert.ok(subject.get('db').adapter);
 });
 
-test('it uses idb even when in test mode', function (assert) {
+test('it doesn\' use memory even when in test mode when explicitly set', function (assert) {
 	this.registry.register('obj:test', Ember.Object.extend({
 		db: injectPouchDB({adapter: 'idb', name: 'test1'})
 	}));
 
 	var subject = this.container.lookup('obj:test');
-	assert.equal(subject.get('db').adapter, 'idb');
+	assert.notEqual(subject.get('db').adapter, 'memory');
 });
 
 test('the injected value is a PouchDB instance', function (assert) {
