@@ -4,6 +4,8 @@ module.exports = {
 	normalizeEntityName: function () {},
 
 	afterInstall: function () {
-		return this.addBowerPackagesToProject(['es5-shim', 'pouchdb']);
+		var self = this;
+		return this.addBowerPackageToProject("es5-shim")
+			.then(function () { return self.addBowerPackageToProject('pouchdb'); });
 	}
 };
