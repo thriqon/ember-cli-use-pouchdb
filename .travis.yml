@@ -32,4 +32,4 @@ install:
   - bower install
 
 script:
-  - if [ $MOCHA != "" ]; then mocha $MOCHA ; else ember try $EMBER_TRY_SCENARIO test ; fi
+  - if [ "x$MOCHA" != "x" ]; then mocha $MOCHA ; else ember try $EMBER_TRY_SCENARIO test ; fi

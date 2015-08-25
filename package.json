@@ -11,11 +11,11 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/thriqon/ember-cli-use-pouchdb.git",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Jonas Weber <mail@jonasw.de> (http://jonasw.de/)",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.1.2",
@@ -52,3 +52,4 @@
     "configPath": "tests/dummy/config"
   }
 }
+
