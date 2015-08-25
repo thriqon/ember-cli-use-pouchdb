@@ -4,6 +4,10 @@ import Ember from 'ember';
 const { testing } = Ember;
 
 export default function (container) {
+	if (!container) {
+		return null;
+	}
+
 	let config = container.lookupFactory('config:environment');
 	let addonConfig = (config ? (config['ember-cli-use-pouchdb'] || {}) : {});
 
