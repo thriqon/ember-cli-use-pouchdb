@@ -13,7 +13,7 @@
   },
   "repository": "https://github.com/thriqon/ember-cli-use-pouchdb.git",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 4"
   },
   "author": "Jonas Weber <mail@jonasw.de> (http://jonasw.de/)",
   "license": "MIT",
