@@ -18,7 +18,7 @@
   "author": "Jonas Weber <mail@jonasw.de> (http://jonasw.de/)",
   "license": "MIT",
   "devDependencies": {
-    "broccoli-asset-rev": "^2.2.0",
+    "broccoli-asset-rev": "2.5.0",
     "chai": "^3.5.0",
     "ember-ajax": "2.5.2",
     "ember-cli": "2.9.1",
